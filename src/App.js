@@ -21,7 +21,7 @@ function App() {
                 setfilterValue={setfilterValue}
               />
               {/* list */}
-              <ListSection />
+              <ListSection todoList={todoList} settodoList={settodoList} />
             </div>
           </div>
         </div>

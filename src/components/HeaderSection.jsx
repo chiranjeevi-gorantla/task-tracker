@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const HeaderSection = ({
   todoList,
@@ -16,6 +17,10 @@ const HeaderSection = ({
 
   const handleAdd = () => {
     console.log(" Add clicked");
+    settodoList((pre) => [
+      ...pre,
+      { taskInput, id: uuidv4(), isCompleted: false },
+    ]);
   };
 
   return (
