@@ -10,9 +10,9 @@ const HeaderSection = ({
   const [taskInput, settaskInput] = useState("");
 
   const selectedValues = [
-    { value: "all", name: "all" },
-    { value: "completed", name: "completed" },
-    { value: "uncompleted", name: "uncompleted" },
+    { value: "all", name: "All" },
+    { value: "completed", name: "Completed" },
+    { value: "uncompleted", name: "Uncompleted" },
   ];
 
   const handleAdd = () => {

@@ -5,7 +5,7 @@ import ListSection from "./components/ListSection";
 
 function App() {
   const [todoList, settodoList] = useState([]);
-  const [filterValue, setfilterValue] = useState("All");
+  const [filterValue, setfilterValue] = useState("all");
 
   return (
     <>
@@ -21,7 +21,11 @@ function App() {
                 setfilterValue={setfilterValue}
               />
               {/* list */}
-              <ListSection todoList={todoList} settodoList={settodoList} />
+              <ListSection
+                todoList={todoList}
+                settodoList={settodoList}
+                filterValue={filterValue}
+              />
             </div>
           </div>
         </div>
